@@ -58,22 +58,99 @@ html, body {
 	margin: 2% 5%;
 	height: 100%;	
 }
+//VARIABLES
+@fonts: 'Roboto', sans-serif;
+@title: 'Cormorant Garamond', serif;
 
+//MIX-INS
+.paraText () {
+	margin: 3%;
+	font-family: @fonts;
+	line-height: 1.5rem;
+}
+
+.h2-style () {
+	font-size: 2rem;
+	font-family: @title;
+	margin: 1.5% 3%;
+}
+
+.flex () {
+	display: flex;
+}
+.space-between () {
+	width: 45%;
+	margin: 0 2.5%;
+}
+//ENDS MIX-INS
+h2 {
+	.h2-style();
+}//ENDS H2
+//BEGINS NAV/ A
 nav {
 	margin-bottom: 3%;
 
 	a {
+		font-family: @fonts;
 		color: #8C342B;
 		text-decoration: none;	
 		padding: 0 2%;
+
+		&:hover {
+			color: #2E3159;
+		}//ENDS &:HOVER
 	}//ENDS A
 }//ENDS NAV
 
+//BEGINS .INTRO/ H1/ P/ A
 .intro {
-	padding: 2%;
+	padding: 4%;
 	background-color: #D9CFC7;
 
 	h1 {
-		font-size: 1.5rem;
-	}
+		font-family: @title;
+		font-size: 2.3rem;
+		margin: 1.5% 3%;
+	}//ENDS H1
+
+	p {
+		.paraText();
+				
+	}//ENDS P
+
+	a {
+		font-size: 1rem;
+		font-weight: bold;
+		font-family: @title;
+		text-decoration: none;
+		color: #2E3159;
+		padding: 1%;
+		margin: 1.5% 3%;
+		border-radius: 5%;
+		background-color: rgb(160, 151, 143);
+		border: 1px solid black;
+
+		&:hover {
+			background-color: #D9CFC7;
+		}//ENDS &:HOVER
+	}//ENDS A
 }//ENDS .INTRO
+
+.abilities {
+	margin: 2.5% 0;
+	.flex();
+
+	.projects {
+		.space-between();
+		p {
+			.paraText();
+		}//ENDS P
+	}//ENDS .PROJECTS
+	.skills {
+		.space-between();
+
+		ul {
+			font-family: @fonts;
+		}//ENDS UL
+	}//ENDS .ABILITIES
+}//ENDS .SKILLS

@@ -136,18 +136,69 @@ body {
   margin: 2% 5%;
   height: 100%;
 }
+h2 {
+  font-size: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+  margin: 1.5% 3%;
+}
 nav {
   margin-bottom: 3%;
 }
 nav a {
+  font-family: 'Roboto', sans-serif;
   color: #8C342B;
   text-decoration: none;
   padding: 0 2%;
 }
+nav a:hover {
+  color: #2E3159;
+}
 .intro {
-  padding: 2%;
+  padding: 4%;
   background-color: #D9CFC7;
 }
 .intro h1 {
-  font-size: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.3rem;
+  margin: 1.5% 3%;
+}
+.intro p {
+  margin: 3%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
+}
+.intro a {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
+  text-decoration: none;
+  color: #2E3159;
+  padding: 1%;
+  margin: 1.5% 3%;
+  border-radius: 5%;
+  background-color: #a0978f;
+  border: 1px solid black;
+}
+.intro a:hover {
+  background-color: #D9CFC7;
+}
+.abilities {
+  margin: 2.5% 0;
+  display: flex;
+}
+.abilities .projects {
+  width: 45%;
+  margin: 0 2.5%;
+}
+.abilities .projects p {
+  margin: 3%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
+}
+.abilities .skills {
+  width: 45%;
+  margin: 0 2.5%;
+}
+.abilities .skills ul {
+  font-family: 'Roboto', sans-serif;
 }
