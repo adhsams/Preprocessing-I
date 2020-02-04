@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>My Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>April Sams Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -17,15 +17,17 @@
   <!--BODY BEGINS-->
   <header>
     <!--HEADER BEGINS: CONTAINS: NAV/ .INTRO/ IMG-->
+    <!--NAV BEGINS-->
       <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Skills</a>
         <a href="#">Contact</a>
       </nav>
+      <!--ENDS NAV-->
+      <!--.INTRO BEGINS, CONTAINS: IMG/ H1/ P-->
       <div class="intro">
-        <!--.INTRO BEGINS, CONTAINS: IMG/ H1/ P/ BUTTON-->
-        <img src="" alt+="" width="300px" height="300px"/>
+         <img src="./images/mountains.jpg" alt+="image of white mountain peaks with red trees." width="300px" height="300px"/>
 
         <h1>April Sams - Web Development</h1>
 
@@ -36,12 +38,15 @@
         <p>Focused on mastering responsive design, user experience, accessibility and JavaScript.
         </p>
       </div>
+      <!--ENDS .INTRO/ IMG/ H1/ P/-->
   </header>
-
-  <section>
+  <!--ENDS HEADER: NAV/ .INTRO/ IMG-->
+<!--.PROJECT BEGINS: CONTAINS: H2 PROJECTS/ H2 SKILLS/ UL-->
+  <section class=".projects">
     <h2>Projects</h2>
     <p>Projects completed have been on responsive design, basic semantic HTML and CSS fundamentals.</p>
     <a href=" https://adhsams.github.io/" class="button">View Portfolio</a>
+    
     <h2>Skills</h2>
     <ul>
       <li>Responsive Design</li>
@@ -50,7 +55,9 @@
       <li>JavaScript</li>
     </ul>
   </section>
-  <section>
+  <!--ENDS .PROJECT: H2 PROJECTS/ H2 SKILLS/ UL-->
+  <!--.WORK-HISTORY BEGINS: CONTAINS: H2 WORK HISTORY/ TABLE-->
+  <section class="work-history">
     <h2>Work History</h2>
     <table>
       <thead>
@@ -83,8 +90,9 @@
       </tbody>
     </table>
   </section>
-
-  <section class="wrapper style1 align-center">
+<!--ENDS .WORK-HISTORY: H2 WORK HISTORY/ TABLE-->
+<!--.CONTACT BEGINS:-->
+  <section class="contact">
     <div class="inner medium">
       <h2>Get in touch</h2>
       <form method="post" action="#">
@@ -108,10 +116,11 @@
       </form>
     </div>
   </section>
-
+<!--ENDS .CONTACT-->
+<!--FOOTER BEGINS-->
   <footer>
     <p class="copyright">&copy; Awesomeness 2020</p>
   </footer>
-  
+<!--ENDS FOOTER-->
 </body>
 </html>
