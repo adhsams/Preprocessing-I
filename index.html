@@ -14,6 +14,104 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <!--BODY BEGINS-->
+  <header>
+    <!--HEADER BEGINS: CONTAINS: NAV/ .INTRO/ IMG-->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="intro">
+        <!--.INTRO BEGINS, CONTAINS: IMG/ H1/ P/ BUTTON-->
+        <img src="" alt+="" width="300px" height="300px"/>
+
+        <h1>April Sams - Web Development</h1>
+
+        <p> Began my journey as a web developer in the begininng of 2020. Had no prior experience 
+         in the technology field but I have always been intrigued by its potential to change the 
+         world. 
+        </p>
+        <p>Focused on mastering responsive design, user experience, accessibility and JavaScript.
+        </p>
+      </div>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <p>Projects completed have been on responsive design, basic semantic HTML and CSS fundamentals.</p>
+    <a href=" https://adhsams.github.io/" class="button">View Portfolio</a>
+    <h2>Skills</h2>
+    <ul>
+      <li>Responsive Design</li>
+      <li>Accessibility</li>
+      <li>User Experience</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Work History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Yrs</th>
+          <th scope="col">Company</th>
+          <th scope="col">Title</th>
+          <th scope="col">Tech Used</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Apple</td>
+          <td>Front End Developer</td>
+          <td>Html and Css</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Microsoft</td>
+          <td>Back End Developer</td>
+          <td>Html, Css, JavaScript</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Google</td>
+          <td>Full Stack Developer</td>
+          <td>Html, Css and JavaScript</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="wrapper style1 align-center">
+    <div class="inner medium">
+      <h2>Get in touch</h2>
+      <form method="post" action="#">
+        <div class="fields">
+          <div class="field half">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="" />
+          </div>
+          <div class="field half">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value="" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="6"></textarea>
+          </div>
+        </div>
+        <ul class="actions special">
+          <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+        </ul>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p class="copyright">&copy; Awesomeness 2020</p>
+  </footer>
+  
 </body>
 </html>
