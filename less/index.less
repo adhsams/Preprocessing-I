@@ -76,12 +76,18 @@ html, body {
 	margin: 1.5% 3%;
 }
 
-.flex () {
-	display: flex;
-}
 .space-between () {
 	width: 45%;
 	margin: 0 2.5%;
+}
+
+.media-space () {
+	width: 95%;
+	margin: 3% 0;
+}
+
+.flex () {
+	display: flex;
 }
 //ENDS MIX-INS
 
@@ -103,6 +109,12 @@ nav {
 			color: @text1;
 		}//ENDS &:HOVER
 	}//ENDS A
+	
+	@media (max-width: 500px) {
+		a {
+			margin: 1% 3%;
+		}//ENDS MEDIA QUERY A
+	}//ENDS MEDIA QUERY NAV
 }//ENDS NAV
 
 //BEGINS .INTRO/ H1/ P/ A
@@ -137,12 +149,27 @@ nav {
 			background-color: @back-color;
 		}//ENDS &:HOVER
 	}//ENDS A
+	@media (max-width: 500px) {
+		img{
+			width: 100%;
+		}//ENDS MEDIA QUERY IMG
+
+		h1{
+			font-size: 2rem;
+			text-align: center;
+		}//ENDS MEDIA QUERY H1
+
+		a {
+			margin: 0 35%;
+			text-align: center;
+		}//ENDS MEDIA QUERY A
+	}//ENDS MEDIA QUERY .INTRO
 }//ENDS .INTRO
 
 .abilities {
 	margin: 5% 0;
 	.flex();
-
+	
 	.projects {
 		.space-between();
 		p {
@@ -162,9 +189,31 @@ nav {
 			li {
 				color: @text2;
 			}//ENDS LI
-		}//ENDS UL
-	}//ENDS .ABILITIES
-}//ENDS .SKILLS
+		}//ENDS UL	 
+	}//ENDS .SKILLS
+	@media (max-width: 500px) {
+		margin: 3% 0;
+		flex-direction: column;
+		
+		h2 {
+			text-align: center;
+		}//ENDS MEDIA QUERY H2
+		
+		.projects {
+			.media-space();
+		}//ENDS MEDIA QUERY .PROJECT
+		
+		.skills {
+			.media-space();
+		}//ENDS MEDIA QUERY .SKILLS
+	}//ENDS MEDIA QUERY .ABILITIES	
+}//ENDS .ABILITIES
+
+@media (max-width: 500px) {
+	.work-history h2 {
+		text-align: center;
+	}//ENDS MEDIA QUERY .WORK-HISTORY H2
+}//END MEDIA QUERY
 
 table {
 	width: 100%;
@@ -207,6 +256,16 @@ table {
 
 	.container {
 		display: flex;
+
+		@media (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.container-half {
+				width: 90%;
+			}//ENDS MEDIA QUERY .CONTAINER-HALF
+		}//ENDS MEDIA QUERY .CONTAINER
 				
 		.container-half {
 			font-family: @fonts;
