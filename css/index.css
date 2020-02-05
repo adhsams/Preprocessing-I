@@ -255,8 +255,14 @@ table td {
 }
 .last-container {
   margin: 5%;
-  display: flex;
 }
 .last-container .field {
-  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+.last-container .field label {
+  color: #8C342B;
+  margin: 0 45%;
+}
+.last-container .field textarea {
+  width: 100%;
 }
