@@ -113,7 +113,7 @@ nav {
 	h1 {
 		font-family: @title;
 		font-size: 2.3rem;
-		margin: 1.5% 3%;
+		margin: 5% 3%;
 	}//ENDS H1
 
 	p {
@@ -128,7 +128,7 @@ nav {
 		text-decoration: none;
 		color: @text1;
 		padding: 1%;
-		margin: 1.5% 3%;
+		margin: 5% 3%;
 		border-radius: 5%;
 		background-color: rgb(160, 151, 143);
 		border: 1px solid black;
@@ -140,7 +140,7 @@ nav {
 }//ENDS .INTRO
 
 .abilities {
-	margin: 2.5% 0;
+	margin: 5% 0;
 	.flex();
 
 	.projects {
@@ -173,11 +173,14 @@ table {
 
 	thead {
 		background-color: @back-color;
-		color: @text2;
 		font-family: @fonts;
 		font-size: 1.2rem;
 		letter-spacing: 2px;
 		text-transform: uppercase;
+
+		th {
+			color: @text2;
+		}//ENDS TH
 	}//ENDS THEAD
 
 	tbody {
@@ -238,4 +241,25 @@ table {
 		}
 	}//ENDS .FEILD		
 }//ENDS .LAST-CONTAINER
+
+.submit {
+	display: flex;
+	justify-content: center;
+
+	input {
+		font-size: 1rem;
+		font-family: @title;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 1% 10%;
+		border-radius: 5%;		
+	}//ENDS INPUT
+}//ENDS UL
+
+footer {
+	font-family: @fonts;
+	font-weight: bold;
+	text-align: center;
+	
+}
 		

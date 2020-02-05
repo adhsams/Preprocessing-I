@@ -156,7 +156,7 @@ nav a:hover {
 .intro h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.3rem;
-  margin: 1.5% 3%;
+  margin: 5% 3%;
 }
 .intro p {
   margin: 3%;
@@ -170,7 +170,7 @@ nav a:hover {
   text-decoration: none;
   color: #2E3159;
   padding: 1%;
-  margin: 1.5% 3%;
+  margin: 5% 3%;
   border-radius: 5%;
   background-color: #a0978f;
   border: 1px solid black;
@@ -179,7 +179,7 @@ nav a:hover {
   background-color: #D9CFC7;
 }
 .abilities {
-  margin: 2.5% 0;
+  margin: 5% 0;
   display: flex;
 }
 .abilities .projects {
@@ -213,11 +213,13 @@ table {
 }
 table thead {
   background-color: #D9CFC7;
-  color: #8C342B;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+table thead th {
+  color: #8C342B;
 }
 table tbody {
   font-family: 'Roboto', sans-serif;
@@ -265,4 +267,21 @@ table td {
 }
 .last-container .field textarea {
   width: 100%;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+}
+.submit input {
+  font-size: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1% 10%;
+  border-radius: 5%;
+}
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: center;
 }
