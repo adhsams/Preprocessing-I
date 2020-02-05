@@ -248,23 +248,17 @@ table {
 .box1 {
 	margin: 2% 10%;
 	padding: 5%;
-	
+		
 	h2 {
 		font-size: 2.3rem;
 		text-align: center;
 	}//ENDS H2
 
 	.container {
-		display: flex;
+		.flex();
 
-		@media (max-width: 500px) {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-
-			.container-half {
-				width: 90%;
-			}//ENDS MEDIA QUERY .CONTAINER-HALF
+		@media (max-width: 500px) {			
+			flex-direction: column;			
 		}//ENDS MEDIA QUERY .CONTAINER
 				
 		.container-half {
