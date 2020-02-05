@@ -246,11 +246,11 @@ table td {
   font-family: 'Roboto', sans-serif;
   width: 50%;
   margin: 8% 1.5%;
-  justify-items: center;
-  align-items: center;
 }
 .box1 .container .container-half label {
+  margin: 0 20%;
   color: #8C342B;
+  display: flex;
 }
 .box1 .container .container-half input {
   padding: 3%;
