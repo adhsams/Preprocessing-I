@@ -109,7 +109,7 @@ body {
 }
 ol,
 ul {
-  list-style: none;
+  list-style: circle;
 }
 blockquote,
 q {
@@ -121,10 +121,6 @@ q:before,
 q:after {
   content: '';
   content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
 * {
@@ -198,7 +194,38 @@ nav a:hover {
 .abilities .skills {
   width: 45%;
   margin: 0 2.5%;
+  border: 1px solid black;
+  padding: 1.5%;
 }
 .abilities .skills ul {
+  padding-left: 4%;
+  margin: 3%;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
+}
+.abilities .skills ul li {
+  color: #8C342B;
+}
+table {
+  width: 100%;
+  height: 10rem;
+  border: 1px solid #e4e2e2;
+}
+table thead {
+  background-color: #D9CFC7;
+  color: #8C342B;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+table tbody {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e4e2e2;
+}
+table td {
+  font-family: 'Roboto', sans-serif;
+  padding: 2%;
+  text-align: center;
+  width: 23%;
 }
