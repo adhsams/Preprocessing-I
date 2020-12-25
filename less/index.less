@@ -33,7 +33,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: circle;
 }
 blockquote, q {
 	quotes: none;
@@ -43,17 +43,292 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	color: @text1;	
 }
 
 html, body {
-    height: 100%;
+	margin: 2% 5%;
+	height: 100%;	
+}
+//VARIABLES
+@fonts: 'Roboto', sans-serif;
+@title: 'Cormorant Garamond', serif;
+@back-color: #D9CFC7;
+@table-color:  rgb(228, 226, 226);
+@text1:  #2E3159;
+@text2:  #8C342B;
+//ENDS VARIABLES
+
+//MIX-INS
+.paraText () {
+	margin: 3%;
+	font-family: @fonts;
+	line-height: 1.5rem;
 }
 
+.h2-style () {
+	font-size: 2rem;
+	font-family: @title;
+	margin: 1.5% 3%;
+}
+
+.space-between () {
+	width: 45%;
+	margin: 0 2.5%;
+}
+
+.media-space () {
+	width: 95%;
+	margin: 3% 0;
+}
+
+.flex () {
+	display: flex;
+}
+//ENDS MIX-INS
+
+h2 {
+	.h2-style();
+}//ENDS H2
+
+//BEGINS NAV/ A
+nav {
+	margin-bottom: 3%;
+
+	a {
+		font-family: @fonts;
+		color: @text2;
+		text-decoration: none;	
+		padding: 0 2%;
+
+		&:hover {
+			color: @text1;
+		}//ENDS &:HOVER
+	}//ENDS A
+	
+	@media (max-width: 500px) {
+		a {
+			margin: 1% 3%;
+		}//ENDS MEDIA QUERY A
+	}//ENDS MEDIA QUERY NAV
+}//ENDS NAV
+
+//BEGINS .INTRO/ H1/ P/ A
+.intro {
+	padding: 4%;
+	background-color: @back-color;
+
+	h1 {
+		font-family: @title;
+		font-size: 2.3rem;
+		margin: 5% 3%;
+	}//ENDS H1
+
+	p {
+		.paraText();
+				
+	}//ENDS P
+
+	a {
+		font-size: 1rem;
+		font-weight: bold;
+		font-family: @title;
+		text-decoration: none;
+		color: @text1;
+		padding: 1%;
+		margin: 5% 3%;
+		border-radius: 5%;
+		background-color: rgb(160, 151, 143);
+		border: 1px solid black;
+
+		&:hover {
+			background-color: @back-color;
+		}//ENDS &:HOVER
+	}//ENDS A
+	@media (max-width: 500px) {
+		img{
+			width: 100%;
+		}//ENDS MEDIA QUERY IMG
+
+		h1{
+			font-size: 2rem;
+			text-align: center;
+		}//ENDS MEDIA QUERY H1
+
+		a {
+			margin: 0 35%;
+			text-align: center;
+		}//ENDS MEDIA QUERY A
+	}//ENDS MEDIA QUERY .INTRO
+}//ENDS .INTRO
+
+.abilities {
+	margin: 5% 0;
+	.flex();
+	
+	.projects {
+		.space-between();
+		p {
+			.paraText();
+		}//ENDS P
+	}//ENDS .PROJECTS
+	.skills {
+		.space-between();
+		border: 1px solid black;
+		padding: 1.5%;
+
+		ul {
+			font-family: @fonts;
+			padding-left: 4%;
+			.paraText();
+			
+			li {
+				color: @text2;
+			}//ENDS LI
+		}//ENDS UL	 
+	}//ENDS .SKILLS
+	@media (max-width: 500px) {
+		margin: 3% 0;
+		flex-direction: column;
+		
+		h2 {
+			text-align: center;
+		}//ENDS MEDIA QUERY H2
+		
+		.projects {
+			.media-space();
+		}//ENDS MEDIA QUERY .PROJECT
+		
+		.skills {
+			.media-space();
+		}//ENDS MEDIA QUERY .SKILLS
+	}//ENDS MEDIA QUERY .ABILITIES	
+}//ENDS .ABILITIES
+
+@media (max-width: 500px) {
+	.work-history {
+		margin: 8% 0;
+
+		h2 {
+			text-align: center;
+		}
+	}//ENDS MEDIA QUERY .WORK-HISTORY H2
+}//END MEDIA QUERY
+
+table {
+	width: 100%;
+	height: 10rem;
+	border: 1px solid @table-color;
+
+	thead {
+		background-color: @back-color;
+		font-family: @fonts;
+		font-size: 1.2rem;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+
+		th {
+			color: @text2;
+		}//ENDS TH
+	}//ENDS THEAD
+
+	tbody {
+		font-family: @fonts;
+		background-color: @table-color;
+	}//ENDS TBODY
+
+	td {
+		font-family: @fonts;
+		padding: 2%;
+		text-align: center;
+		width: 23%;
+	}//ENDS TD
+}//ENDS TABLE
+
+.box1 {
+	margin: 2% 10%;
+	padding: 5%;
+		
+	h2 {
+		font-size: 2.3rem;
+		text-align: center;
+	}//ENDS H2
+
+	.container {
+		.flex();
+		
+		
+		.container-half {
+			font-family: @fonts;
+			width: 100%;
+			margin: 8% 0;
+			.flex();
+			justify-content: space-evenly;
+			text-align: center;
+
+			@media (max-width: 500px) {			
+				flex-direction: column;
+				margin: 5% 0;
+
+				label {
+					margin: 5% 0;
+				}			
+			}//ENDS MEDIA QUERY .CONTAINER
+											
+			label {
+				color: @text2;
+			}//ENDS LABEL
+			input {
+				padding: 2.5%;			
+			}//ENDS INPUT		
+		}//ENDS .CONTAINER-HALF
+	}//ENDS .CONTAINER
+}//ENDS .BOX1
+
+.last-container {
+	margin: 5%;
+	
+	@media (max-width: 500px) {
+		width: 100%;
+		margin: 8% auto;		
+	}
+
+	.field {
+		font-family: @fonts;
+		
+		label {
+			color: @text2;
+			margin: 0 45%;								
+		}//ENDS LABEL
+		
+		textarea {
+			width: 100%;
+			height: 25vh;			
+		}
+	}//ENDS .FEILD		
+}//ENDS .LAST-CONTAINER
+
+.submit {
+	display: flex;
+	justify-content: center;
+
+	input {
+		font-size: 1rem;
+		font-family: @title;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 1% 10%;
+		border-radius: 5%;		
+	}//ENDS INPUT
+}//ENDS UL
+
+footer {
+	font-family: @fonts;
+	text-align: center;
+	
+}
+		

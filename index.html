@@ -3,8 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto&display=swap" rel="stylesheet">
 
-  <title>My Resume</title>
+  <title>April Sams Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -14,6 +17,124 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <!--BODY BEGINS-->
+  <header>
+    <!--HEADER BEGINS: CONTAINS: NAV/ .INTRO/ IMG-->
+    <!--NAV BEGINS-->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+      </nav>
+      <!--ENDS NAV-->
+      <!--.INTRO BEGINS, CONTAINS: IMG/ H1/ P-->
+      <div class="intro">
+         <img src="./images/mountains.jpg" alt+="image of white mountain peaks with red trees." width="300px" height="300px"/>
+
+        <h1>April Sams - Web Development</h1>
+
+        <p> I began my journey of becoming a web developer as a student at Lambda in the begininng of 2020. Lambda's precourse work was my first exposure to code. Even though, I had no prior experience in the technology field, I have always been intrigued by its potential to change the world. 
+        </p>
+        <p>I found web development facinating, my passion for the field drove me to focuse on developing my skills in responsive design, user experience, accessibility and JavaScript.
+        </p>
+        <a href=" https://adhsams.github.io/" class="button">View Portfolio</a>
+      </div>
+      <!--ENDS .INTRO/ IMG/ H1/ P/-->
+  </header>
+  <!--ENDS HEADER: NAV/ .INTRO/ IMG-->
+<!--.PROJECT BEGINS: CONTAINS: H2 PROJECTS/ H2 SKILLS/ UL-->
+  <section class="abilities">
+    <div class="projects">
+      <h2>Projects</h2>
+      <p>Projects completed have been on responsive design, basic semantic HTML and CSS fundamentals. You can view projects completed in View Portfolio.</p>   
+  </div>
+  <div class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Responsive Design</li>
+      <li>Accessibility</li>
+      <li>User Experience</li>
+      <li>JavaScript</li>
+    </ul>
+  </div> 
+  </section>
+  <!--ENDS .PROJECT: H2 PROJECTS/ H2 SKILLS/ UL-->
+  <!--.WORK-HISTORY BEGINS: CONTAINS: H2 WORK HISTORY/ TABLE-->
+  <section class="work-history">
+    <h2>Work History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Yrs</th>
+          <th scope="col">Company</th>
+          <th scope="col">Title</th>
+          <th scope="col">Tech Used</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Apple</td>
+          <td>Front End Developer</td>
+          <td>Html and Css</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Microsoft</td>
+          <td>Back End Developer</td>
+          <td>Html, Css, JavaScript</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Google</td>
+          <td>Full Stack Developer</td>
+          <td>Html, Css and JavaScript</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+<!--ENDS .WORK-HISTORY: H2 WORK HISTORY/ TABLE-->
+<!--.CONTACT BEGINS:-->
+  <section>
+    <!--BEGINS .BOX1-->
+    <div class="box1">
+      <h2>Get in touch</h2>
+      <form method="post" action="#">
+        <!--BEGINS .CONTAINER -->
+        <div class="container">
+          <!--BEGINS .CONTAINER-HALF-->
+          <div class="container-half">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="" />
+                   
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value=""/>  
+          </div>
+          <!--ENDS .CONTAINER-HALF-->
+        </div>
+      <!--ENDS .CONTAINER-->
+      <!--BEGINS .LAST-CONTAINER-->
+      <div class="last-container">
+        <!--.FIELD-->
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="6"></textarea>
+          </div>
+          <!--ENDS .FIELD-->
+      </div>
+      <!--ENDS .LAST-CONTAINER-->   
+        <ul class="submit">
+          <input type="submit" value="submit">
+        </ul>
+      </form>
+    </div>
+    <!--ENDS .BOX1-->
+  </section<!--ENDS .CONTACT-->
+<!--FOOTER BEGINS-->
+  <footer>
+    <p class="copyright">&copy; Awesomeness 2020</p>
+  </footer>
+<!--ENDS FOOTER-->
 </body>
 </html>
